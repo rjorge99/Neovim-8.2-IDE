@@ -2,7 +2,7 @@
 -- in case it isn't installed
 -- local colorscheme = "nightfly"
 -- local colorscheme = "dracula"
-local colorscheme = "tokyonight"
+local colorscheme = "darkplus"
 
 local status, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status then
