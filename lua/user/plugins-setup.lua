@@ -141,6 +141,9 @@ return packer.startup(function(use)
 	-- Copilot
 	use("github/copilot.vim") -- Github copilot
 
+	-- Transparency
+	use("tribela/vim-transparent")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
