@@ -47,6 +47,7 @@ return packer.startup(function(use)
 	-- Colorschemes
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
 	use("Mofiqul/dracula.nvim")
+	use("folke/tokyonight.nvim")
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
