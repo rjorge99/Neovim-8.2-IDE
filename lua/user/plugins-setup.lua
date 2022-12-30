@@ -46,6 +46,7 @@ return packer.startup(function(use)
 
 	-- Colorschemes
 	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
+	use("Mofiqul/dracula.nvim")
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
@@ -100,6 +101,7 @@ return packer.startup(function(use)
 			ts_update()
 		end,
 	})
+	use({ "nvim-treesitter/nvim-treesitter-context" })
 
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
@@ -113,6 +115,31 @@ return packer.startup(function(use)
 
 	-- Code Lab
 	use({ "0x100101/lab.nvim", run = "cd js && npm ci", requires = { "nvim-lua/plenary.nvim" } }) -- Similar to quokka
+
+	-- Buffers
+	use({ "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" }) -- Close buffers, Bdelete
+
+	-- Visuals
+	use({ "lukas-reineke/indent-blankline.nvim", commit = "6177a59552e35dfb69e1493fd68194e673dc3ee2" }) -- Lines to indentetion
+	use({ "norcalli/nvim-colorizer.lua", commit = "36c610a9717cc9ec426a07c8e6bf3b3abcb139d6" })
+	use({ "p00f/nvim-ts-rainbow" }) -- color for brackets, parenthesis, etc
+	use("chentoast/marks.nvim") -- write the mark to the left of the row
+	use({
+		"folke/todo-comments.nvim",
+		requires = "nvim-lua/plenary.nvim",
+		-- commit = "96391ae41e63a5edba260adfd7312462b54ddc8e", -- version que funciona en nvim 8 y anteriores
+		config = function()
+			require("todo-comments").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
+	})
+	use({ "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" })
+
+	-- Copilot
+	use("github/copilot.vim") -- Github copilot
 
 	if packer_bootstrap then
 		require("packer").sync()

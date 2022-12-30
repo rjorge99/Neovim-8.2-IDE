@@ -1,4 +1,4 @@
--- Shorten function name
+-- Shorten
 local keymap = vim.keymap.set
 
 local opts = { noremap = true, silent = true }
@@ -36,6 +36,22 @@ keymap("n", "<leader>tx", ":tabclose<CR>", opts) -- close current tab
 keymap("n", "<leader>tn", ":tabn<CR>", opts) --  go to next tab
 keymap("n", "<leader>tp", ":tabp<CR>", opts) --  go to previous tab
 
+-- Window
+keymap("n", "<leader>w", "<cmd>close<CR>", opts)
+
+-- Move text up and down
+keymap("v", "J", ":m '>+1<CR>gv=gv", opts)
+keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
+keymap("v", "p", '"_dP', opts)
+keymap("n", "<C-d>", "<C-d>zz", opts)
+keymap("n", "<C-u>", "<C-u>zz", opts)
+
+-- Move text up and down
+keymap("v", "J", ":m '>+1<CR>gv=gv", opts)
+keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
+keymap("v", "p", '"_dP', opts)
+keymap("n", "<C-d>", "<C-d>zz", opts)
+keymap("n", "<C-u>", "<C-u>zz", opts)
 ----------------------
 -- Plugin Keybinds
 ----------------------
@@ -69,3 +85,11 @@ keymap("n", "<leader><leader>e", ":wq!<CR>", opts) -- Save and exit
 -- Code run
 keymap("n", "<leader><leader>cr", ":Lab code run<cr>", opts)
 keymap("n", "<leader><leader>cs", ":Lab code stop<cr>", opts)
+
+-- Close buffers
+keymap("n", "<leader>bc", "<cmd>Bdelete!<CR>", opts)
+keymap("n", "<leader>bo", ":%bd|e#|bd#<CR>", opts)
+
+-- Naviagate buffers
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
