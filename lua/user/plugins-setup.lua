@@ -45,11 +45,8 @@ return packer.startup(function(use)
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
 	-- Colorschemes
-	use("bluz71/vim-nightfly-guicolors") -- preferred colorscheme
-	use("Mofiqul/dracula.nvim")
-	use("folke/tokyonight.nvim")
-	use({ "rjorge99/darkplus.nvim", commit = "21a674f60dedf00e65776bfa4f50445235c6a130" })
-
+	use("LunarVim/darkplus.nvim")
+ 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
