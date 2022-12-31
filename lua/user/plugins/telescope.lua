@@ -17,7 +17,7 @@ telescope.setup({
 		prompt_prefix = " ",
 		selection_caret = " ",
 		path_display = { "smart" },
-		file_ignore_patterns = { "node_modules", ".git/", ".next/", ".git\\", ".next\\" }, -- Que ignore la carpeta de node_modules
+		file_ignore_patterns = { "node_modules", ".git/", ".next/", ".git\\", ".next\\", ".jpg", ".jgp", ".bmp" }, -- Que ignore la carpeta de node_modules
 		mappings = {
 			i = {
 				["<C-k>"] = actions.move_selection_previous, -- move to prev result
