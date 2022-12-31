@@ -46,7 +46,8 @@ return packer.startup(function(use)
 
 	-- Colorschemes
 	use("LunarVim/darkplus.nvim")
- 
+	use("rjorge99/halcyon-neovim")
+
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
