@@ -93,3 +93,7 @@ keymap("n", "<leader>bo", ":%bd|e#|bd#<CR>", opts)
 -- Naviagate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
+
+-- Color Picker
+keymap("n", "<C-c>", "<cmd>PickColor<cr>", opts)
+keymap("i", "<C-c>", "<cmd>PickColorInsert<cr>", opts)

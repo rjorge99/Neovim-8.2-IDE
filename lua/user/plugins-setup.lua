@@ -86,7 +86,7 @@ return packer.startup(function(use)
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- easily configure language servers
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-	use({ "glepnir/lspsaga.nvim", branch = "main" }) -- enhanced lsp uis
+	use({ "glepnir/lspsaga.nvim", branch = "main", commit = "b7b4777369b441341b2dcd45c738ea4167c11c9e" }) -- enhanced lsp uis
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 
 	-- formatting & linting
@@ -143,6 +143,14 @@ return packer.startup(function(use)
 
 	-- Transparency
 	use("tribela/vim-transparent")
+
+	-- Color Picker
+	use({
+		"ziontee113/color-picker.nvim",
+		config = function()
+			require("color-picker")
+		end,
+	})
 
 	if packer_bootstrap then
 		require("packer").sync()
