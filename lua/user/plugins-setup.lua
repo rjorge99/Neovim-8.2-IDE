@@ -152,6 +152,15 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- Color in html for tailwinds
+	use({
+		"themaxmarchuk/tailwindcss-colors.nvim",
+		module = "tailwindcss-colors",
+		config = function()
+			require("tailwindcss-colors").setup()
+		end,
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
