@@ -151,6 +151,7 @@ return packer.startup(function(use)
 			require("color-picker")
 		end,
 	})
+	use("KabbAmine/vCoolor.vim")
 
 	-- Color in html for tailwinds
 	use({
