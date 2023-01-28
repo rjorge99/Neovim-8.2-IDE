@@ -141,9 +141,6 @@ return packer.startup(function(use)
 	-- Copilot
 	use("github/copilot.vim") -- Github copilot
 
-	-- Transparency
-	use("tribela/vim-transparent")
-
 	-- Color Picker
 	use({
 		"ziontee113/color-picker.nvim",
