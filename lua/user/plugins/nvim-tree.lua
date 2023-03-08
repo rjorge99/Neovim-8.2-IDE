@@ -40,6 +40,11 @@ nvimtree.setup({
 			},
 		},
 	},
+	update_focused_file = {
+		enable = true,
+		update_cwd = true,
+		ignore_list = {},
+	},
 	-- disable window_picker for
 	-- explorer to work well with
 	-- window splits
