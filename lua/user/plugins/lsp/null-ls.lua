@@ -17,21 +17,21 @@ null_ls.setup({
 	sources = {
 		--  to disable file types use
 		--  "formatting.prettier.with({disabled_filetypes: {}})" (see null-ls docs)
-		-- formatting.prettier, -- js/ts formatter
-		formatting.prettier.with({
-			extra_args = {
-				"--single-quote",
-				"--jsx-single-quote",
-				"--trailing-comma",
-				"none",
-				"--print-width",
-				"100",
-				"--tab-width",
-				"4",
-				"--bracket-same-line",
-				"true",
-			},
-		}),
+		formatting.prettier, -- js/ts formatter
+		-- formatting.prettier.with({
+		-- 	extra_args = {
+		-- 		"--single-quote",
+		-- 		"--jsx-single-quote",
+		-- 		"--trailing-comma",
+		-- 		"none",
+		-- 		"--print-width",
+		-- 		"100",
+		-- 		"--tab-width",
+		-- 		"4",
+		-- 		"--bracket-same-line",
+		-- 		"true",
+		-- 	},
+		-- }),
 		formatting.stylua, -- lua formatter
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
