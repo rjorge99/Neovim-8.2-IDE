@@ -171,6 +171,16 @@ return packer.startup(function(use)
 		end,
 	})
 
+	use({
+        "iamcco/markdown-preview.nvim",
+        commit = "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96",
+        run = "cd app && npm install",
+        setup = function()
+            vim.g.mkdp_filetypes = { "markdown" }
+        end,
+        ft = { "markdown" },
+    }) -- Markdown previewer
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

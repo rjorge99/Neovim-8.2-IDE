@@ -97,3 +97,11 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 -- Color Picker
 keymap("n", "<C-c>", "<cmd>PickColor<cr>", opts)
 keymap("i", "<C-c>", "<cmd>PickColorInsert<cr>", opts)
+
+-- Vcoolor
+-- <Alt-R> you can insert a rgb color anywhere (NORMAL and INSERT modes).
+-- <Alt-V> you can insert a hsl color anywhere (NORMAL and INSERT modes).
+-- <Alt-W> you can insert a rgba color anywhere (NORMAL and INSERT modes).
+
+-- Markdown-Preview Plugin
+keymap("n", "<leader>mp", ":MarkdownPreview<CR>", opts)
