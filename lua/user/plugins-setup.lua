@@ -46,7 +46,10 @@ return packer.startup(function(use)
 
 	-- Colorschemes
 	use("LunarVim/darkplus.nvim")
-	use("rjorge99/halcyon-neovim")
+	use("folke/tokyonight.nvim")
+	use({ "bluz71/vim-nightfly-colors", as = "nightfly" })
+	use("Shatur/neovim-ayu")
+	use({ "catppuccin/nvim", as = "catppuccin" })
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
