@@ -50,8 +50,12 @@ keymap("n", "<C-u>", "<C-u>zz", opts)
 keymap("v", "J", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
 keymap("v", "p", '"_dP', opts)
-keymap("n", "<C-d>", "<C-d>zz", opts)
+keymap("n", "<c-d>", "<c-d>zz", opts)
 keymap("n", "<C-u>", "<C-u>zz", opts)
+
+-- Stay in indent mode
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
 ----------------------
 -- Plugin Keybinds
 ----------------------
@@ -79,6 +83,9 @@ keymap("n", "<leader>hn", "<cmd>lua require('harpoon.ui').nav_file(3)<CR>", opts
 keymap("n", "<leader>hs", "<cmd>lua require('harpoon.ui').nav_file(4)<CR>", opts)
 
 -- Varios
+-- keymap("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<cr>", opts) puede afectar a saga que tiene <leader>rn
+keymap("n", "<leader><leader>s", "<cmd>HopChar1<cr>", opts) -- Easy motion
+keymap("n", "<leader>br", ":%s/", opts) -- Replace a word based on regular expressions
 keymap("n", "<leader>ic", "f{a<CR><C-o>O", opts) -- Insert code between {}}
 keymap("n", "<leader><leader>e", ":wq!<CR>", opts) -- Save and exit
 

@@ -37,11 +37,8 @@ packer.init({
 return packer.startup(function(use)
 	-- Plugins
 	use({ "wbthomason/packer.nvim", commit = "00ec5adef58c5ff9a07f11f45903b9dbbaa1b422" }) -- Have packer manage itself
-
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-
 	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
-
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
 	-- Colorschemes
@@ -86,7 +83,7 @@ return packer.startup(function(use)
 	-- managing & installing lsp servers, linters & formatters
 	use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
 	use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
-  	use({ "RRethy/vim-illuminate" }) -- Highlight
+	use({ "RRethy/vim-illuminate" }) -- Highlight
 
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- easily configure language servers
@@ -171,15 +168,34 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- Markdown previewer
 	use({
-        "iamcco/markdown-preview.nvim",
-        commit = "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96",
-        run = "cd app && npm install",
-        setup = function()
-            vim.g.mkdp_filetypes = { "markdown" }
-        end,
-        ft = { "markdown" },
-    }) -- Markdown previewer
+		"iamcco/markdown-preview.nvim",
+		commit = "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96",
+		run = "cd app && npm install",
+		setup = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+		end,
+		ft = { "markdown" },
+	})
+
+	-- Others
+	use({ "mg979/vim-visual-multi" }) -- multicursor
+	use("christoomey/vim-titlecase") -- Capitalize text
+	use({
+		"anuvyklack/pretty-fold.nvim",
+		config = function()
+			require("pretty-fold").setup()
+		end,
+	}) -- folding
+	use({
+		"phaazon/hop.nvim",
+		commit = " a3cf6684bcb9fc974609ae81424f285f05280d90",
+		branch = "v1",
+		config = function()
+			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
+		end,
+	}) --  Easymotion like plugin
 
 	if packer_bootstrap then
 		require("packer").sync()

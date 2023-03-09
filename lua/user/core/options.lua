@@ -24,7 +24,7 @@ opt.termguicolors = true -- set term gui colors (most terminals support this)
 -- apt.background = "dark"
 opt.signcolumn = "yes" -- always show the sign column, otherwise it would shift the text each time
 
--- backspace 
+-- backspace
 opt.backspace = "indent,eol,start" -- make backspace in insert mode behave as in most other editors
 
 -- clipboard
@@ -33,7 +33,6 @@ opt.clipboard = "unnamedplus" -- allows neovim to access the system clipboard
 -- split windows
 opt.splitbelow = true -- force all horizontal splits to go below current window
 opt.splitright = true -- force all vertical splits to go to the right of current window
-
 
 opt.iskeyword:append("-")
 
@@ -62,5 +61,8 @@ opt.scrolloff = 8 -- is one of my fav
 opt.sidescrolloff = 8
 opt.guifont = "monospace:h17" -- the font used in graphical neovim applications
 opt.fillchars.eob = " "
-opt.shortmess:append "c"
+opt.shortmess:append("c")
 opt.whichwrap:append("<,>,[,],h,l")
+
+opt.foldlevel = 100
+opt.foldmethod = "indent"
