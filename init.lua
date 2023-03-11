@@ -1,6 +1,7 @@
 require("user.plugins-setup")
 require("user.core.options")
 require("user.core.keymaps")
+require("user.core.enfocado")
 require("user.core.colorscheme")
 require("user.plugins.colorizer")
 require("user.plugins.comment")

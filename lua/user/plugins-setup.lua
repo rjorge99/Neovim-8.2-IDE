@@ -44,6 +44,7 @@ return packer.startup(function(use)
 	-- Colorschemes
 	use("LunarVim/darkplus.nvim")
 	use("folke/tokyonight.nvim")
+	use("wuelnerdotexe/vim-enfocado")
 	use({ "bluz71/vim-nightfly-colors", as = "nightfly" })
 	use("Shatur/neovim-ayu")
 	use({ "catppuccin/nvim", as = "catppuccin" })
