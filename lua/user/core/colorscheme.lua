@@ -7,7 +7,6 @@ local colorscheme = "enfocado"
 
 local status, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 
-
 if not status then
 	print("Colorscheme not found!") -- print error if colorscheme not installed
 	return
