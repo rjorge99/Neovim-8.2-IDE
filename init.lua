@@ -7,8 +7,8 @@ require("user.plugins.colorizer")
 require("user.plugins.comment")
 require("user.plugins.nvim-tree")
 require("user.plugins.marks")
---[[ require("user.plugins.lualine") ]]
-require("user.plugins.feline")
+require("user.plugins.lualine")
+--[[ require("user.plugins.feline") ]]
 require("user.plugins.telescope")
 require("user.plugins.nvim-cmp")
 require("user.plugins.lsp.mason")

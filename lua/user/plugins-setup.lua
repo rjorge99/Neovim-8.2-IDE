@@ -48,6 +48,10 @@ return packer.startup(function(use)
 	use({ "bluz71/vim-nightfly-colors", as = "nightfly" })
 	use("Shatur/neovim-ayu")
 	use({ "catppuccin/nvim", as = "catppuccin" })
+	use({
+		"AlexvZyl/nordic.nvim",
+		branch = "dev",
+	})
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
@@ -64,7 +68,7 @@ return packer.startup(function(use)
 	use("nvim-tree/nvim-web-devicons")
 
 	-- statusline
-	--[[ use("nvim-lualine/lualine.nvim") ]]
+	use("nvim-lualine/lualine.nvim")
 	use("feline-nvim/feline.nvim")
 
 	-- fuzzy finding w/ telescope
