@@ -112,3 +112,5 @@ keymap("i", "<C-c>", "<cmd>PickColorInsert<cr>", opts)
 
 -- Markdown-Preview Plugin
 keymap("n", "<leader>mp", ":MarkdownPreview<CR>", opts)
+
+keymap("n", "<C-f>", ":silent !tmux neww tmux-sessionizer<CR>", opts)
