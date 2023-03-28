@@ -52,6 +52,7 @@ return packer.startup(function(use)
 		"AlexvZyl/nordic.nvim",
 		branch = "dev",
 	})
+	use("sainnhe/gruvbox-material")
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
