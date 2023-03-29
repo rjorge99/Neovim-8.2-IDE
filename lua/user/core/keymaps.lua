@@ -42,14 +42,20 @@ keymap("n", "<leader>w", "<cmd>close<CR>", opts)
 -- Move text up and down
 keymap("v", "J", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
-keymap("v", "p", '"_dP', opts)
+
+-- J keeps cursor in current position
+keymap("n", "J", "mzJ`z", opts)
+
+-- Doesn copy replaced word
+keymap("v", "<leader>p", '"_dP', opts)
+
+-- Keeps cursor in center when jumping
 keymap("n", "<C-d>", "<C-d>zz", opts)
 keymap("n", "<C-u>", "<C-u>zz", opts)
 
 -- Move text up and down
 keymap("v", "J", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
-keymap("v", "p", '"_dP', opts)
 keymap("n", "<c-d>", "<c-d>zz", opts)
 keymap("n", "<C-u>", "<C-u>zz", opts)
 

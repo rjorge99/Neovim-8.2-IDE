@@ -15,6 +15,8 @@ opt.wrap = false -- display lines as one long line
 -- search settings
 opt.ignorecase = true -- ignore case in search patterns
 opt.smartcase = true -- smart case
+opt.hlsearch = true -- highlight all matches on previous search pattern
+opt.incsearch = true -- incremental search
 
 -- cursor line
 opt.cursorline = true -- highlight the current line
@@ -42,7 +44,6 @@ opt.cmdheight = 1 -- more space in the neovim command line for displaying messag
 opt.completeopt = { "menuone", "noselect" } -- mostly just for cmp
 opt.conceallevel = 0 -- so that `` is visible in markdown files
 opt.fileencoding = "utf-8" -- the encoding written to a file
-opt.hlsearch = true -- highlight all matches on previous search pattern
 opt.mouse = "a" -- allow the mouse to be used in neovim
 opt.pumheight = 10 -- pop up menu height
 opt.showmode = false -- we don't need to see things like -- INSERT -- anymore
