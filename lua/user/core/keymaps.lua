@@ -107,6 +107,9 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<C-c>", "<cmd>PickColor<cr>", opts)
 keymap("i", "<C-c>", "<cmd>PickColorInsert<cr>", opts)
 
+-- Git
+keymap("n", "<leader>gs", ":Git<CR>", opts)
+
 -- Vcoolor
 -- <Alt-R> you can insert a rgb color anywhere (NORMAL and INSERT modes).
 -- <Alt-V> you can insert a hsl color anywhere (NORMAL and INSERT modes).

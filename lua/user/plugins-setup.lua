@@ -186,6 +186,9 @@ return packer.startup(function(use)
 		ft = { "markdown" },
 	})
 
+	-- Github
+	use("tpope/vim-fugitive")
+
 	-- Others
 	use({ "mg979/vim-visual-multi" }) -- multicursor
 	use("christoomey/vim-titlecase") -- Capitalize text
