@@ -71,6 +71,8 @@ keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", opts) -- find string i
 keymap("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", opts) -- find string under cursor in current working directory
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts) -- list open buffers in current neovim instance
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts) -- list available help tags
+keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts) -- list available help tags
+keymap("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", opts) -- list available help tags
 
 -- Harpoon
 keymap("n", "<leader>hu", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>", opts)
@@ -113,4 +115,5 @@ keymap("i", "<C-c>", "<cmd>PickColorInsert<cr>", opts)
 -- Markdown-Preview Plugin
 keymap("n", "<leader>mp", ":MarkdownPreview<CR>", opts)
 
+-- Custom Scripts
 keymap("n", "<C-f>", ":silent !tmux neww tmux-sessionizer<CR>", opts)
