@@ -29,6 +29,10 @@ mason_lspconfig.setup({
 		"lua_ls",
 		"emmet_ls",
 		"jsonls",
+		"bashls",
+		"ansiblels",
+		"dockerls",
+		"docker_compose_language_service",
 	},
 	-- auto-install configured servers (with lspconfig)
 	-- automatic_installation = true, -- not the same as ensure_installed
