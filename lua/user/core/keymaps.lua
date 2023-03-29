@@ -60,7 +60,7 @@ keymap("v", ">", ">gv", opts)
 -- Plugin Keybinds
 ----------------------
 -- vim-maximizer
-keymap("n", "<leader>sm", ":MaximizerToggle<CR>", opt) -- toggle split window maximization
+keymap("n", "<leader>sm", ":MaximizerToggle<CR>", opts) -- toggle split window maximization
 
 -- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
