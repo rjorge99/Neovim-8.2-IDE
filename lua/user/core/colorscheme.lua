@@ -1,6 +1,7 @@
 -- local colorscheme = "darkplus"
 --[[ local colorscheme = "enfocado" ]]
-local colorscheme = "gruvbox-material"
+--[[ local colorscheme = "gruvbox-material" ]]
+local colorscheme = "rose-pine"
 -- local colorscheme = "tokyonight-moon"
 -- local colorscheme = "catppuccin-mocha"
 -- local colorscheme = "ayu-mirage"

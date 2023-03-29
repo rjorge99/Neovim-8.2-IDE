@@ -53,6 +53,7 @@ return packer.startup(function(use)
 		branch = "dev",
 	})
 	use("sainnhe/gruvbox-material")
+	use({ "rose-pine/neovim", as = "rose-pine" })
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
