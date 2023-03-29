@@ -124,5 +124,8 @@ keymap("n", "<leader>gs", ":Git<CR>", opts)
 -- Markdown-Preview Plugin
 keymap("n", "<leader>mp", ":MarkdownPreview<CR>", opts)
 
+-- Give executon permits to current file
+keymap("n", "<leader>x", "<cmd>!chmod +x %<CR>", opts)
+
 -- Custom Scripts
 keymap("n", "<C-f>", ":silent !tmux neww tmux-sessionizer<CR>", opts)
