@@ -55,6 +55,9 @@ return packer.startup(function(use)
 	use("sainnhe/gruvbox-material")
 	use({ "rose-pine/neovim", as = "rose-pine" })
 
+	-- Template string converter
+	use("axelvc/template-string.nvim")
+
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
