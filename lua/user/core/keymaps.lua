@@ -71,6 +71,8 @@ keymap("n", "<leader>sm", ":MaximizerToggle<CR>", opts) -- toggle split window m
 -- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
+keymap("n", "<leader>u", ":UndotreeToggle<CR>", opts)
+
 -- telescope
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts) -- find files within current working directory, respects .gitignore
 keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", opts) -- find string in current working directory as you type
