@@ -84,6 +84,7 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-buffer") -- source for text in buffer
 	use("hrsh7th/cmp-path") -- source for file system pats
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
+	use("ray-x/lsp_signature.nvim")
 
 	-- snippets
 	use("L3MON4D3/LuaSnip") -- snippet engine
