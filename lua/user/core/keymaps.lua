@@ -98,6 +98,7 @@ keymap("n", "<leader><leader>s", "<cmd>HopChar1<cr>", opts) -- Easy motion
 keymap("n", "<leader>br", ":%s/", opts) -- Replace a word based on regular expressions
 keymap("n", "<leader>ic", "f{a<CR><C-o>O", opts) -- Insert code between {}}
 keymap("n", "<leader><leader>e", ":wq!<CR>", opts) -- Save and exit
+keymap("n", "<leader>k", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts) -- Show function signature
 
 -- Code run
 keymap("n", "<leader><leader>cr", ":Lab code run<cr>", opts)
