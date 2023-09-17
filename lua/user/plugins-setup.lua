@@ -121,7 +121,7 @@ return packer.startup(function(use)
 			ts_update()
 		end,
 	})
-	use({ "nvim-treesitter/nvim-treesitter-context" })
+	--[[ use({ "nvim-treesitter/nvim-treesitter-context" }) ]]
 	use({ "mbbill/undotree" })
 
 	-- auto closing
