@@ -179,6 +179,15 @@ return packer.startup(function(use)
 			require("tailwindcss-colors").setup()
 		end,
 	})
+	use({
+	  "roobert/tailwindcss-colorizer-cmp.nvim",
+	  -- optionally, override the default options:
+	  config = function()
+	    require("tailwindcss-colorizer-cmp").setup({
+	      color_square_width = 2,
+	    })
+	  end
+	})
 
 	-- Markdown previewer
 	use({
