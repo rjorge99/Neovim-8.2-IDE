@@ -9,7 +9,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Save
-keymap("n", "<leader>ss", ":w<CR>", opts)
+keymap("n", "<leader>ss", ":w!<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
