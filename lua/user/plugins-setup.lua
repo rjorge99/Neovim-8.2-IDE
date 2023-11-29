@@ -160,8 +160,9 @@ return packer.startup(function(use)
 	use({ "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" })
 
 	-- Copilot
-	use("github/copilot.vim") -- Github copilot
-
+	-- use("github/copilot.vim") -- Github copilot
+	use("Exafunction/codeium.vim")
+			
 	-- Color Picker
 	use({
 		"ziontee113/color-picker.nvim",
