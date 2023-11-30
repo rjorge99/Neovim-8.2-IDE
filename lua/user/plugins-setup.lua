@@ -99,15 +99,14 @@ return packer.startup(function(use)
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- easily configure language servers
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-	--use({
-	--	"glepnir/lspsaga.nvim",
-	--	branch = "main",
-	--	requires = {
-	--		{ "nvim-tree/nvim-web-devicons" },
-	--		{ "nvim-treesitter/nvim-treesitter" },
-	--	},
-	-- }) -- enhanced lsp uis
-	use { 'kkharji/lspsaga.nvim' }
+	use ({
+	    'nvimdev/lspsaga.nvim',
+	    after = 'nvim-lspconfig',
+	    config = function()
+	        require('lspsaga').setup({})
+	    end,
+	})
+	-- use { 'kkharji/lspsaga.nvim' }
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 
 	-- formatting & linting
