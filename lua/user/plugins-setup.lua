@@ -99,14 +99,13 @@ return packer.startup(function(use)
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- easily configure language servers
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-	use ({
-	    'nvimdev/lspsaga.nvim',
-	    after = 'nvim-lspconfig',
-	    config = function()
-	        require('lspsaga').setup({})
-	    end,
+	use({
+		"nvimdev/lspsaga.nvim",
+		after = "nvim-lspconfig",
+		config = function()
+			require("lspsaga").setup({})
+		end,
 	})
-	-- use { 'kkharji/lspsaga.nvim' }
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 
 	-- formatting & linting
@@ -162,7 +161,7 @@ return packer.startup(function(use)
 	-- Copilot
 	-- use("github/copilot.vim") -- Github copilot
 	use("Exafunction/codeium.vim")
-			
+
 	-- Color Picker
 	use({
 		"ziontee113/color-picker.nvim",
@@ -181,13 +180,13 @@ return packer.startup(function(use)
 		end,
 	})
 	use({
-	  "roobert/tailwindcss-colorizer-cmp.nvim",
-	  -- optionally, override the default options:
-	  config = function()
-	    require("tailwindcss-colorizer-cmp").setup({
-	      color_square_width = 2,
-	    })
-	  end
+		"roobert/tailwindcss-colorizer-cmp.nvim",
+		-- optionally, override the default options:
+		config = function()
+			require("tailwindcss-colorizer-cmp").setup({
+				color_square_width = 2,
+			})
+		end,
 	})
 
 	-- Markdown previewer
