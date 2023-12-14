@@ -15,6 +15,9 @@ keymap("n", "<leader>ss", ":w!<CR>", opts)
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
 
+-- Exit
+keymap("n", "QQ", "<cmd>:q!<CR>", opts)
+
 -- Clear highlights
 keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 
@@ -81,6 +84,8 @@ keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts) -- list open buffe
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts) -- list available help tags
 keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts) -- list available help tags
 keymap("n", "<leader>fk", "<cmd>Telescope keymaps<cr>", opts) -- list available help tags
+keymap("n", "<leader>wt", "<cmd>lua require('telescope').extensions.git_worktree.git_worktrees()<cr>", opts) -- list of worktrees
+keymap("n", "<leader>wT", "<cmd>lua require('telescope').extensions.git_worktree.create_git_worktree()<cr>", opts) -- list of worktrees
 
 -- Harpoon
 keymap("n", "<leader>hu", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>", opts)

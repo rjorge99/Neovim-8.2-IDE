@@ -220,6 +220,8 @@ return packer.startup(function(use)
 			require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
 		end,
 	}) --  Easymotion like plugin
+	use("ThePrimeagen/git-worktree.nvim")
+	use("folke/twilight.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
